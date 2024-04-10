@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    position: relative;
+    background: url(data/home.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 40vh;
+    overflow: hidden;
+    /* Avoids any overflow issues */
+}
+
+.header-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    /* Ensure this is lower than text elements */
+}
+
+h1,
+nav {
+    padding: 20px;
+    position: absolute;
+    z-index: 2;
+    /* Ensure this is higher than the overlay */
+}
+
+h1 {
+    top: 0;
+    left: 20px;
+    position: absolute;
+    /* Ensures h1 is positioned absolutely within its relative parent */
+    z-index: 10;
+    /* Ensures h1 appears over the overlay */
+    padding: 20px;
+    color: white;
+}
+
+h2 {
+    top: 250px;
+    left: 100px;
+    position: absolute;
+    font-size: 60px;
+    /* Ensures h1 is positioned absolutely within its relative parent */
+    z-index: 10;
+    /* Ensures h1 appears over the overlay */
+    padding: 20px;
+    color: white;
+}
+
+
+nav {
+    top: 0;
+    /* Align to the top edge */
+    right: 20px;
+    /* Align to the right edge */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    /* Remove default padding */
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+main {
+    font-size: 16px;
+    margin: 60px;
+    padding: 0 20%;
+    /* Adjust the percentage as needed for your design */
+}
+
+main p {
+    text-align: justify;
+}
+
+main li {
+    margin-bottom: 20px;
+}
+
+main img {
+
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+
+footer {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 10px 0;
+}
