@@ -105,6 +105,11 @@ main li {
     margin-bottom: 20px;
 }
 
+main ul li a {
+    margin-bottom: 20px;
+    color: black;
+}
+
 main img {
 
     width: 100%;
